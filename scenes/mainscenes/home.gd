@@ -9,4 +9,3 @@ func minigame1():
 
 func minigame2():
 	add_child(load("res://scenes/mainscenes/minigame2.tscn").instantiate())
-	

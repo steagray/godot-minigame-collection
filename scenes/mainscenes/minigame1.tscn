@@ -33,3 +33,12 @@ offset_bottom = 91.0
 [node name="BubbleTimer" type="Timer" parent="."]
 one_shot = true
 autostart = true
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 11.0
+offset_top = 535.0
+offset_right = 1129.0
+offset_bottom = 630.0
+text = "Description:
+Click the buttons as they appear, final result will be given as a fraction of successful clicks to total clicks. 
+Score will be given in the time box at the end. You have 30 seconds."
