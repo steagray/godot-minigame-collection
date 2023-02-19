@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpmfihf5uo3j0"]
+
+[ext_resource type="Script" path="res://scenes/mainscenes/home.gd" id="1_lf5wg"]
+
+[node name="Home" type="Node2D"]
+script = ExtResource("1_lf5wg")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 420.0
+offset_top = 192.0
+offset_right = 713.0
+offset_bottom = 354.0
+text = "Home"
+
+[node name="minigame1" type="Button" parent="."]
+offset_left = 21.0
+offset_top = 22.0
+offset_right = 70.0
+offset_bottom = 56.0
+text = "minigame 1"
+
+[node name="minigame2" type="Button" parent="."]
+offset_left = 10.0
+offset_top = 95.0
+offset_right = 71.0
+offset_bottom = 132.0
+text = "minigame 2"

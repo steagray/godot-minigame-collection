@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhcwhtrq0fy45"]
+
+[ext_resource type="Script" path="res://scenes/mainscenes/Minigame1.gd" id="1_g68h8"]
+
+[node name="minigame2" type="Node2D"]
+script = ExtResource("1_g68h8")
+
+[node name="Buttons" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 291.0
+offset_top = 149.0
+offset_right = 913.0
+offset_bottom = 511.0
+
+[node name="ColorRect" type="ColorRect" parent="Buttons"]
+layout_mode = 0
+offset_right = 622.0
+offset_bottom = 362.0
+color = Color(0.568627, 0, 0.290196, 0.317647)
+
+[node name="GameTime" type="Timer" parent="."]
+wait_time = 30.0
+one_shot = true
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 569.0
+offset_top = 57.0
+offset_right = 637.0
+offset_bottom = 91.0
+
+[node name="BubbleTimer" type="Timer" parent="."]
+one_shot = true
+autostart = true
