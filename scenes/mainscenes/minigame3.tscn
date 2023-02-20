@@ -3,9 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://db17f31u7y0ja" path="res://icon.svg" id="1_jax5f"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_8g0od"]
-vertices = PackedVector2Array(1087, 31, 1095, 457, 50, 456, 50, 48)
+vertices = PackedVector2Array(1087, 31, 1087, 456, 50, 456, 49, 31)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(50, 48, 50, 456, 1095, 457, 1087, 31)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(49, 31, 50, 456, 1087, 456, 1087, 31)])
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ewpa4"]
 size = Vector2(50, 50)
