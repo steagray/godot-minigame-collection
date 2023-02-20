@@ -7,7 +7,9 @@ var score = 0
 func _ready():
 	$Label.text = "Goal: " + str(goal)
 	$marker.position.x = $ProgressBar.position.x + ($ProgressBar.size.x * goal / 100)
-	$Timer.timeout.connect(func():queue_free())
+	$Timer.timeout.connect(func():
+		
+		queue_free())
 
 func _physics_process(delta):
 	$igt.text = str($Timer.time_left).left(4)

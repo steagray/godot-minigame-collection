@@ -19,22 +19,22 @@ offset_right = 622.0
 offset_bottom = 362.0
 color = Color(0.568627, 0, 0.290196, 0.317647)
 
-[node name="GameTime" type="Timer" parent="."]
-wait_time = 30.0
-one_shot = true
-autostart = true
-
 [node name="Label" type="Label" parent="."]
 offset_left = 569.0
 offset_top = 57.0
 offset_right = 637.0
 offset_bottom = 91.0
 
+[node name="GameTime" type="Timer" parent="."]
+wait_time = 30.0
+one_shot = true
+autostart = true
+
 [node name="BubbleTimer" type="Timer" parent="."]
 one_shot = true
 autostart = true
 
-[node name="Label2" type="Label" parent="."]
+[node name="Description" type="Label" parent="."]
 offset_left = 11.0
 offset_top = 535.0
 offset_right = 1129.0
