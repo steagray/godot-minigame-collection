@@ -10,9 +10,11 @@ func _ready():
 	$GameTime.timeout.connect(func(): 
 		$BubbleTimer.stop()
 		$Label.text = "GAME OVER"
-		await get_tree().create_timer(5).timeout
+		await get_tree().create_timer(3).timeout
 		$Label.text = "Your accuracy: " + str(score) + "/" + str(clicks)
-		await get_tree().create_timer(5).timeout
+		get_parent().hs_check(1, score)
+		await get_tree().create_timer(3).timeout
+		get_parent().emit_signal("ui_return")
 		queue_free())
 
 func _physics_process(delta):

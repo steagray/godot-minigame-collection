@@ -8,7 +8,8 @@ func _ready():
 	$Label.text = "Goal: " + str(goal)
 	$marker.position.x = $ProgressBar.position.x + ($ProgressBar.size.x * goal / 100)
 	$Timer.timeout.connect(func():
-		
+		get_parent().hs_check(2, score)
+		get_parent().emit_signal("ui_return")
 		queue_free())
 
 func _physics_process(delta):
